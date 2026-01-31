@@ -37,7 +37,7 @@ def zoom_webhook():
         plain_token = data.get('payload', {}).get('plainToken')
         print(f"Validating with token: {plain_token}")  # Debug log
         import hmac, hashlib
-        SECRET_TOKEN = os.environ.get('ZOOM_SECRET_TOKEN', 'YOUR_SECRET_TOKEN_HERE') 
+        SECRET_TOKEN = "r72xUnMLTHOgHcgZS3Np7Q" 
         hash_for_validate = hmac.new(key=SECRET_TOKEN.encode('utf-8'), msg=plain_token.encode('utf-8'), digestmod=hashlib.sha256).hexdigest()
         print(f"Returning hash: {hash_for_validate}")  # Debug log
         return jsonify({"plainToken": plain_token, "encryptedToken": hash_for_validate}), 200

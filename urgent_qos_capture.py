@@ -15,11 +15,11 @@ import json
 import os
 from datetime import datetime
 
-# Credentials (set these as environment variables or replace with your values)
-ACCOUNT_ID = os.environ.get('ZOOM_ACCOUNT_ID', 'YOUR_ACCOUNT_ID')
-CLIENT_ID = os.environ.get('ZOOM_CLIENT_ID', 'YOUR_CLIENT_ID')
-CLIENT_SECRET = os.environ.get('ZOOM_CLIENT_SECRET', 'YOUR_CLIENT_SECRET')
-MEETING_ID = os.environ.get('ZOOM_MEETING_ID', 'YOUR_MEETING_ID')
+# Credentials
+ACCOUNT_ID = 'xhKbAsmnSM6pNYYYurmqIA'
+CLIENT_ID = '2ysNg6WLS0Sm8bKVVDeXcQ'
+CLIENT_SECRET = 'iWgD4lZrbkxOWiGEjTgwAc3ZHSC6K5xZ'
+MEETING_ID = '9034027764'
 
 def get_access_token():
     url = "https://zoom.us/oauth/token"
