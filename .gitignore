@@ -1,20 +1,19 @@
-# Data files (contain meeting data)
-breakout_room_attendance_log.csv
-zoom_raw_payloads.json
-*.csv
-*.json
-!room_names.json
-
-# Large files
-ngrok.exe
-ngrok.zip
-*.exe
-*.zip
+# Logs
+*.log
 
 # Python
 __pycache__/
 *.pyc
+*.pyo
 
-# OS
-.DS_Store
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# Windows temp
 Thumbs.db
+nul
+
+# ngrok binary (download separately)
+ngrok.exe
